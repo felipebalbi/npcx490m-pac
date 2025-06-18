@@ -5,123 +5,117 @@ pub type W = crate::W<EspistsSpec>;
 #[doc = "Field `IBRST` reader - In-Band Reset Command Received"]
 pub type IbrstR = crate::BitReader;
 #[doc = "Field `IBRST` writer - In-Band Reset Command Received"]
-pub type IbrstW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type IbrstW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `CFGUPD` reader - eSPI Configuration Updated"]
 pub type CfgupdR = crate::BitReader;
 #[doc = "Field `CFGUPD` writer - eSPI Configuration Updated"]
-pub type CfgupdW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CfgupdW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `BERR` reader - eSPI Bus Error"]
 pub type BerrR = crate::BitReader;
 #[doc = "Field `BERR` writer - eSPI Bus Error"]
-pub type BerrW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type BerrW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `OOBRX` reader - OOB Data Received"]
 pub type OobrxR = crate::BitReader;
 #[doc = "Field `OOBRX` writer - OOB Data Received"]
-pub type OobrxW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type OobrxW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `FLASHRX` reader - Flash Data Received"]
 pub type FlashrxR = crate::BitReader;
 #[doc = "Field `FLASHRX` writer - Flash Data Received"]
-pub type FlashrxW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type FlashrxW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `FLNACS` reader - Flash Non-Automatic Completion Sent"]
 pub type FlnacsR = crate::BitReader;
 #[doc = "Field `FLNACS` writer - Flash Non-Automatic Completion Sent"]
-pub type FlnacsW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type FlnacsW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `PERACC` reader - Peripheral Channel Access Detected"]
 pub type PeraccR = crate::BitReader;
 #[doc = "Field `PERACC` writer - Peripheral Channel Access Detected"]
-pub type PeraccW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type PeraccW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `DFRD` reader - Peripheral Channel Transaction Deferred"]
 pub type DfrdR = crate::BitReader;
 #[doc = "Field `DFRD` writer - Peripheral Channel Transaction Deferred"]
-pub type DfrdW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type DfrdW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `VWUPD` reader - Virtual Wire Updated"]
 pub type VwupdR = crate::BitReader;
 #[doc = "Field `VWUPD` writer - Virtual Wire Updated"]
-pub type VwupdW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type VwupdW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `ESPIRST` reader - eSPI_RST Activated"]
 pub type EspirstR = crate::BitReader;
 #[doc = "Field `ESPIRST` writer - eSPI_RST Activated"]
-pub type EspirstW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type EspirstW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `PLTRST` reader - PLTRST Activated"]
 pub type PltrstR = crate::BitReader;
 #[doc = "Field `PLTRST` writer - PLTRST Activated"]
-pub type PltrstW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type PltrstW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `BMWBURSTQEMP` reader - Bus Master Burst Mode Write Queue Empty"]
 pub type BmwburstqempR = crate::BitReader;
-#[doc = "Field `BMWBURSTQEMP` writer - Bus Master Burst Mode Write Queue Empty"]
-pub type BmwburstqempW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `FLAUTORDREQ` reader - Flash Automatic Read Request"]
 pub type FlautordreqR = crate::BitReader;
-#[doc = "Field `FLAUTORDREQ` writer - Flash Automatic Read Request"]
-pub type FlautordreqW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `AMERR` reader - Automatic Mode Transfer Error"]
 pub type AmerrR = crate::BitReader;
 #[doc = "Field `AMERR` writer - Automatic Mode Transfer Error"]
-pub type AmerrW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type AmerrW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `AMDONE` reader - Automatic Mode Transfer Done"]
 pub type AmdoneR = crate::BitReader;
 #[doc = "Field `AMDONE` writer - Automatic Mode Transfer Done"]
-pub type AmdoneW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type AmdoneW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `VWUPDW` reader - Virtual Wire Updated Wake-Up"]
 pub type VwupdwR = crate::BitReader;
 #[doc = "Field `VWUPDW` writer - Virtual Wire Updated Wake-Up"]
-pub type VwupdwW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type VwupdwW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `FLNPRQS` reader - Flash Non-Posted Request Sent"]
 pub type FlnprqsR = crate::BitReader;
 #[doc = "Field `FLNPRQS` writer - Flash Non-Posted Request Sent"]
-pub type FlnprqsW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type FlnprqsW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `BMTXDONE` reader - Peripheral Bus Master Data Transmitted"]
 pub type BmtxdoneR = crate::BitReader;
 #[doc = "Field `BMTXDONE` writer - Peripheral Bus Master Data Transmitted"]
-pub type BmtxdoneW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type BmtxdoneW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `PBMRX` reader - Peripheral Bus Master Data Received"]
 pub type PbmrxR = crate::BitReader;
 #[doc = "Field `PBMRX` writer - Peripheral Bus Master Data Received"]
-pub type PbmrxW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type PbmrxW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `PMSGRX` reader - Peripheral Message Data Received"]
 pub type PmsgrxR = crate::BitReader;
 #[doc = "Field `PMSGRX` writer - Peripheral Message Data Received"]
-pub type PmsgrxW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type PmsgrxW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `BMBURSTERR` reader - Bus Master Burst Mode Read Transfer Error"]
 pub type BmbursterrR = crate::BitReader;
 #[doc = "Field `BMBURSTERR` writer - Bus Master Burst Mode Read Transfer Error"]
-pub type BmbursterrW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type BmbursterrW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `BMBURSTDONE` reader - Bus Master Burst Mode Read Transfer Done"]
 pub type BmburstdoneR = crate::BitReader;
 #[doc = "Field `BMBURSTDONE` writer - Bus Master Burst Mode Read Transfer Done"]
-pub type BmburstdoneW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type BmburstdoneW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `ESPIRST_LVL` reader - eSPI_RST Level"]
 pub type EspirstLvlR = crate::BitReader;
-#[doc = "Field `ESPIRST_LVL` writer - eSPI_RST Level"]
-pub type EspirstLvlW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `FLPRTERR` reader - Flash Protection Error"]
 pub type FlprterrR = crate::BitReader;
 #[doc = "Field `FLPRTERR` writer - Flash Protection Error"]
-pub type FlprterrW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type FlprterrW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `FLAUTORDSTR` reader - Flash Automatic Read Request Start"]
 pub type FlautordstrR = crate::BitReader;
 #[doc = "Field `FLAUTORDSTR` writer - Flash Automatic Read Request Start"]
-pub type FlautordstrW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type FlautordstrW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `FLAUTORDPND` reader - Flash Automatic Read Request Pending"]
 pub type FlautordpndR = crate::BitReader;
 #[doc = "Field `FLAUTORDPND` writer - Flash Automatic Read Request Pending"]
-pub type FlautordpndW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type FlautordpndW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `FLAUTORDQEMP` reader - Flash Automatic Read Queue Empty"]
 pub type FlautordqempR = crate::BitReader;
 #[doc = "Field `FLAUTORDQEMP` writer - Flash Automatic Read Queue Empty"]
-pub type FlautordqempW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type FlautordqempW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `AUTO_RD_DIS_STS` reader - Automatic Read Disable Status"]
 pub type AutoRdDisStsR = crate::BitReader;
 #[doc = "Field `AUTO_RD_DIS_STS` writer - Automatic Read Disable Status"]
-pub type AutoRdDisStsW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type AutoRdDisStsW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `BMWBURSTERR` reader - Bus Master Burst Mode Write Transfer Error"]
 pub type BmwbursterrR = crate::BitReader;
 #[doc = "Field `BMWBURSTERR` writer - Bus Master Burst Mode Write Transfer Error"]
-pub type BmwbursterrW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type BmwbursterrW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `BMWBURSTDONE` reader - Bus Master Burst Mode Write Transfer Done"]
 pub type BmwburstdoneR = crate::BitReader;
 #[doc = "Field `BMWBURSTDONE` writer - Bus Master Burst Mode Write Transfer Done"]
-pub type BmwburstdoneW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type BmwburstdoneW<'a, REG> = crate::BitWriter1C<'a, REG>;
 impl R {
     #[doc = "Bit 0 - In-Band Reset Command Received"]
     #[inline(always)]
@@ -367,16 +361,6 @@ impl W {
     pub fn pltrst(&mut self) -> PltrstW<EspistsSpec> {
         PltrstW::new(self, 10)
     }
-    #[doc = "Bit 11 - Bus Master Burst Mode Write Queue Empty"]
-    #[inline(always)]
-    pub fn bmwburstqemp(&mut self) -> BmwburstqempW<EspistsSpec> {
-        BmwburstqempW::new(self, 11)
-    }
-    #[doc = "Bit 14 - Flash Automatic Read Request"]
-    #[inline(always)]
-    pub fn flautordreq(&mut self) -> FlautordreqW<EspistsSpec> {
-        FlautordreqW::new(self, 14)
-    }
     #[doc = "Bit 15 - Automatic Mode Transfer Error"]
     #[inline(always)]
     pub fn amerr(&mut self) -> AmerrW<EspistsSpec> {
@@ -421,11 +405,6 @@ impl W {
     #[inline(always)]
     pub fn bmburstdone(&mut self) -> BmburstdoneW<EspistsSpec> {
         BmburstdoneW::new(self, 23)
-    }
-    #[doc = "Bit 24 - eSPI_RST Level"]
-    #[inline(always)]
-    pub fn espirst_lvl(&mut self) -> EspirstLvlW<EspistsSpec> {
-        EspirstLvlW::new(self, 24)
     }
     #[doc = "Bit 25 - Flash Protection Error"]
     #[inline(always)]
@@ -474,7 +453,7 @@ impl crate::Readable for EspistsSpec {}
 impl crate::Writable for EspistsSpec {
     type Safety = crate::Unsafe;
     const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0xfeff_87ff;
 }
 #[doc = "`reset()` method sets ESPISTS to value 0"]
 impl crate::Resettable for EspistsSpec {

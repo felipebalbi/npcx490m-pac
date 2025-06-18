@@ -5,35 +5,35 @@ pub type W = crate::W<EspierrSpec>;
 #[doc = "Field `INVCMD` reader - Invalid Command Type"]
 pub type InvcmdR = crate::BitReader;
 #[doc = "Field `INVCMD` writer - Invalid Command Type"]
-pub type InvcmdW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type InvcmdW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `INVCYC` reader - Invalid Cycle Type"]
 pub type InvcycR = crate::BitReader;
 #[doc = "Field `INVCYC` writer - Invalid Cycle Type"]
-pub type InvcycW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type InvcycW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `CRCERR` reader - Transaction CRC Error"]
 pub type CrcerrR = crate::BitReader;
 #[doc = "Field `CRCERR` writer - Transaction CRC Error"]
-pub type CrcerrW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type CrcerrW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `ABCOMP` reader - Abnormal Completion"]
 pub type AbcompR = crate::BitReader;
 #[doc = "Field `ABCOMP` writer - Abnormal Completion"]
-pub type AbcompW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type AbcompW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `PROTERR` reader - Protocol Error"]
 pub type ProterrR = crate::BitReader;
 #[doc = "Field `PROTERR` writer - Protocol Error"]
-pub type ProterrW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type ProterrW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `BADSIZE` reader - Bad Size"]
 pub type BadsizeR = crate::BitReader;
 #[doc = "Field `BADSIZE` writer - Bad Size"]
-pub type BadsizeW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type BadsizeW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `NPBADALN` reader - Non-Posted Peripheral Channel Bad Address Alignment"]
 pub type NpbadalnR = crate::BitReader;
 #[doc = "Field `NPBADALN` writer - Non-Posted Peripheral Channel Bad Address Alignment"]
-pub type NpbadalnW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type NpbadalnW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `PCBADALN` reader - Posted Peripheral Channel Bad Address Alignment"]
 pub type PcbadalnR = crate::BitReader;
 #[doc = "Field `PCBADALN` writer - Posted Peripheral Channel Bad Address Alignment"]
-pub type PcbadalnW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type PcbadalnW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `FLBADALN` reader - Target-Attached Flash Bad Address Alignment"]
 pub type FlbadalnR = crate::BitReader;
 #[doc = "Field `FLBADALN` writer - Target-Attached Flash Bad Address Alignment"]
@@ -41,23 +41,23 @@ pub type FlbadalnW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `UNCMD` reader - Unsupported Command or Cycle Type"]
 pub type UncmdR = crate::BitReader;
 #[doc = "Field `UNCMD` writer - Unsupported Command or Cycle Type"]
-pub type UncmdW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `VWERR` reader - Virtual Channel Access Error"]
-pub type VwerrR = crate::BitReader;
-#[doc = "Field `VWERR` writer - Virtual Channel Access Error"]
-pub type VwerrW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type UncmdW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `EXTRACYC` reader - Extra eSPI Clock Cycles"]
 pub type ExtracycR = crate::BitReader;
 #[doc = "Field `EXTRACYC` writer - Extra eSPI Clock Cycles"]
-pub type ExtracycW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type ExtracycW<'a, REG> = crate::BitWriter1C<'a, REG>;
+#[doc = "Field `VWERR` reader - Virtual Channel Access Error"]
+pub type VwerrR = crate::BitReader;
+#[doc = "Field `VWERR` writer - Virtual Channel Access Error"]
+pub type VwerrW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `UNPBM` reader - Unsuccessful Bus Master Completion"]
 pub type UnpbmR = crate::BitReader;
 #[doc = "Field `UNPBM` writer - Unsuccessful Bus Master Completion"]
-pub type UnpbmW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type UnpbmW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `UNFLASH` reader - Unsuccessful Flash Completion"]
 pub type UnflashR = crate::BitReader;
 #[doc = "Field `UNFLASH` writer - Unsuccessful Flash Completion"]
-pub type UnflashW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type UnflashW<'a, REG> = crate::BitWriter1C<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Invalid Command Type"]
     #[inline(always)]
@@ -109,15 +109,15 @@ impl R {
     pub fn uncmd(&self) -> UncmdR {
         UncmdR::new(((self.bits >> 9) & 1) != 0)
     }
-    #[doc = "Bit 10 - Virtual Channel Access Error"]
-    #[inline(always)]
-    pub fn vwerr(&self) -> VwerrR {
-        VwerrR::new(((self.bits >> 10) & 1) != 0)
-    }
     #[doc = "Bit 10 - Extra eSPI Clock Cycles"]
     #[inline(always)]
     pub fn extracyc(&self) -> ExtracycR {
         ExtracycR::new(((self.bits >> 10) & 1) != 0)
+    }
+    #[doc = "Bit 11 - Virtual Channel Access Error"]
+    #[inline(always)]
+    pub fn vwerr(&self) -> VwerrR {
+        VwerrR::new(((self.bits >> 11) & 1) != 0)
     }
     #[doc = "Bit 14 - Unsuccessful Bus Master Completion"]
     #[inline(always)]
@@ -202,15 +202,15 @@ impl W {
     pub fn uncmd(&mut self) -> UncmdW<EspierrSpec> {
         UncmdW::new(self, 9)
     }
-    #[doc = "Bit 10 - Virtual Channel Access Error"]
-    #[inline(always)]
-    pub fn vwerr(&mut self) -> VwerrW<EspierrSpec> {
-        VwerrW::new(self, 10)
-    }
     #[doc = "Bit 10 - Extra eSPI Clock Cycles"]
     #[inline(always)]
     pub fn extracyc(&mut self) -> ExtracycW<EspierrSpec> {
         ExtracycW::new(self, 10)
+    }
+    #[doc = "Bit 11 - Virtual Channel Access Error"]
+    #[inline(always)]
+    pub fn vwerr(&mut self) -> VwerrW<EspierrSpec> {
+        VwerrW::new(self, 11)
     }
     #[doc = "Bit 14 - Unsuccessful Bus Master Completion"]
     #[inline(always)]
@@ -234,7 +234,7 @@ impl crate::Readable for EspierrSpec {}
 impl crate::Writable for EspierrSpec {
     type Safety = crate::Unsafe;
     const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0xceff;
 }
 #[doc = "`reset()` method sets ESPIERR to value 0"]
 impl crate::Resettable for EspierrSpec {
