@@ -18,6 +18,146 @@ ESPI:
   _delete:
     - PBMTXBUF0-1818
 
+  #
+  # eSPI Status Register
+  #
+  ESPISTS:
+    _modify:
+      IBRST:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      CFGUPD:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      BERR:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      OOBRX:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      FLASHRX:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      FLNACS:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      PERACC:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      DFRD:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      VWUPD:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      ESPIRST:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      PLTRST:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      BMWBURSTQEMP:
+        access: read-only
+      FLAUTORDREQ:
+        access: read-only
+      AMERR:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      AMDONE:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      VWUPDW:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      FLNPRQS:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      BMTXDONE:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      PBMRX:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      PMSGRX:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      BMBURSTERR:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      BMBURSTDONE:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      ESPIRST_LVL:
+        access: read-only
+      FLPRTERR:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      FLAUTORDSTR:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      FLAUTORDPND:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      FLAUTORDQEMP:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      AUTO_RD_DIS_STS:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      BMWBURSTERR:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      BMWBURSTDONE:
+        access: read-write
+        modifiedWriteValues: oneToClear
+        
+  #
+  # eSPI Error Status Register
+  #
+  ESPIERR:
+    _modify:
+      UNFLASH:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      UNPBM:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      VWERR:
+        access: read-write
+        modifiedWriteValues: oneToClear
+        bitOffset: 11
+        bitWidth: 1
+      EXTRACYC:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      UNCMD:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      PCBADALN:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      NPBADALN:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      BADSIZE:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      PROTERR:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      ABCOMP:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      CRCERR:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      INVCYC:
+        access: read-write
+        modifiedWriteValues: oneToClear
+      INVCMD:
+        access: read-write
+        modifiedWriteValues: oneToClear
+
   _modify:
     #
     # Virtual Wire Channel Registers
