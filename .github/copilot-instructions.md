@@ -1,5 +1,12 @@
 # Copilot Instructions
 
+> **Note:** The repository-wide guidance for AI coding agents lives in
+> [`AGENTS.md`](../AGENTS.md) at the root of the repo. That document is a
+> superset of this file and covers build/test commands, the SVD-driven
+> code-generation pipeline, repo layout, and contribution workflow. The
+> commit-message and `Assisted-by` trailer rules below remain authoritative
+> and are mirrored verbatim in `AGENTS.md`.
+
 ## Commit Messages
 - Subject line: capitalized, 50 characters or less, imperative mood (e.g., "Fix bug" not "Fixed bug")
 - Separate subject from body with a blank line
